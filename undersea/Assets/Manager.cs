@@ -1,22 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Manager : MonoBehaviour
 {
-    // Start is called before the first frame update4
-
-    public InputField InputField;
-    public GameObject scanObject;
-    
-    public void Action(GameObject scanObj)
+    public void ctrl()
     {
-        scanObject = scanObj;
+        SceneManager.LoadScene("2");
     }
-    void Update()
 
+    public void dtrl()
     {
-        
+        SceneManager.LoadScene("3");
     }
 }
